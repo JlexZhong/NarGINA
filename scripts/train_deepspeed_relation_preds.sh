@@ -5,8 +5,8 @@ wandb online
 deepspeed  --include localhost:1,4,6,7 --master_port 61001  train/train_mem_nograph_relation_preds.py \
 --deepspeed ./scripts/zero3.json \
 --model_name_or_path /disk/NarGINA/weights/vicuna-7b-v1.5 \
---data_path /disk/NarGINA/relation_extraction/dataset/train_data.json \
---eval_data_path /disk/NarGINA/relation_extraction/dataset/validate_data.json \
+--data_path /disk/NarGINA/graph_construction_model/ft-vicuna-relation_extraction/dataset/train_data.json \
+--eval_data_path /disk/NarGINA/graph_construction_model/ft-vicuna-relation_extraction/dataset/validate_data.json \
 --version conv_edge_pred \
 --cache_dir ../../checkpoint \
 --bf16 True \

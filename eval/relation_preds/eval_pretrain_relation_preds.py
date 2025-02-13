@@ -206,7 +206,7 @@ if __name__ == "__main__":
     parser.add_argument("--model_path", type=str, default="/disk/NarGINA/checkpoints/relation_preds/vicuna_7b")
     parser.add_argument("--model_base", type=str, default="/disk/NarGINA/weights/vicuna-7b-v1.5")
     # parser.add_argument("--data_dir", type=str, default=None)
-    parser.add_argument("--data_path", type=str, default="/disk/NarGINA/relation_extraction/dataset/xlw_test_data_2.json")    
+    parser.add_argument("--data_path", type=str, default="/disk/NarGINA/graph_construction_model/ft-vicuna-relation_extraction/dataset/xlw_test_data_2.json")    
     parser.add_argument("--pretrained_embedding_type", type=str, default="attn_mlp")
     #parser.add_argument("--use_hop", type=int, default=2)
     #parser.add_argument("--sample_neighbor_size", type=int, default=10)
